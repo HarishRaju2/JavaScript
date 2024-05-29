@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <h1>BIND METHOD</h1>
+    <body>
+        
+    <script>
+        const dad=
+        {
+            Fathername:'Raju'
+
+        }
+const mom=
+        {
+            Fathername:'Revathi'
+        }
+        
+        const result=function()
+        {
+            return `${this.Fathername}`
+        };
+        const res=result.bind(mom)
+        const res1=result.bind(dad)
+
+        console.log(res());
+        console.log(res1());
+
+    </script>
+    </body>
+</html>
